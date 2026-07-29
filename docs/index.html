@@ -52,7 +52,7 @@
     var editThisPageLinkText = 'Edit this Page';
 
     // Set standalone to true to permanently hide the Sidebar and Navbar
-    var standalone = false;
+    var standalone = true;
 
     // Set ToC to true to permanently show page Table of Contents (Sidebar and Navbar must also be hidden)
     var ToC = false;
@@ -219,7 +219,8 @@
             var editHtml = '[:memo:' + editThisPageLinkText + '](' + url + ' ":class=edit-link")\n'
 
             if ((!(getURLParameterByName('hidegitlink'))) && (!!gitLinkRepoURL)) {
-              return editHtml + '\n' + html
+              // Appends the edit link after the page content
+              return html + '<br />' + '\n\n' + editHtml
             } else {
               return html
             }
