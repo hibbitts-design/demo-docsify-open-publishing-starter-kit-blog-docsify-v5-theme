@@ -1,4 +1,4 @@
-![City at night](london-at-night/unsplash-london-night.jpg ":class=header-tall-image-full-with-headings-overlay :no-zoom")
+![City at night](london-at-night/unsplash-london-night.jpg ":class=header-tall-image-full-width-headings-overlay :no-zoom")
 
 # London at Night
 
